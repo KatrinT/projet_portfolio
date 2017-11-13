@@ -16,7 +16,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <!--Fontawesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-
+    <!--Material icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- CSS -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -39,7 +40,7 @@
               <li><a href="#experience">Experience</a></li>
               <li><a href="#loisirs">Loisirs</a></li>
               <li><a href="#compétences">Compétences techniques</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="contact.php">Contact</a></li>
           </ul>
       </div>
   </nav>
