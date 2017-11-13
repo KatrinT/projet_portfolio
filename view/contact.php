@@ -1,4 +1,9 @@
-<main class="container">
+<main class="container formulaire">
+
+    <h2>Vous souhaitez me contacter?</h2>
+    <p>
+        N'hésitez pas m'envoyer une demande de contact via le formulaire ci-dessous
+    </p>
     <form method="post" action="">
         <div class="row">
             <div class="col s12 l6">
@@ -26,5 +31,6 @@
                 <i class="material-icons right">send</i>
             </button>
         </div>
+        <div class="g-recaptcha" data-sitekey="6LenijgUAAAAAN9bdvoXJmw8SqGcTUFmkzPDiBxe"></div>
     </form>
 </main>

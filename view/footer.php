@@ -13,17 +13,11 @@
 
             <div class="col l4 offset-l2 s12">
                 <ul>
-                    <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/catherine-tritz-35465232/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/catherine-tritz-35465232/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                     <li><a class="grey-text text-lighten-3" href="https://twitter.com/CatherineTritz#" target="_blank"><i class="fa fa-twitter"></i></a></li>
                 </ul>
             </div>
         </div>
-  </div>
-
-<!--Share reseaux sociaux-->
-  <div>
-      <a href="<?=$socialLinksPage->twitter->shareUrl?>">Twitter</a>
-      <a href="<?=$socialLinksPage->linkedin->shareUrl?>">Linkedin</a>
   </div>
 
 <!--Copyright-->
@@ -33,5 +27,13 @@
     </div>
   </div>
 </footer>
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+<!-- jquery -->
+<script src="js/script.js"></script>
 </body>
 </html>
