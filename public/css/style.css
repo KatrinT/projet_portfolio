@@ -14,25 +14,21 @@ body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
-    color: #666;
+    color: white;
     background-color: #fff;
 }
 
 /* ==== titre ==== */
-h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    margin: 2rem 2rem 1.875rem;
+    margin: 5rem 2rem 1.875rem;
 }
 
-h1{
-    font-size: 4rem;
-}
-h2 {
-    font-size: 2.5rem;
+h2  {
+    font-size: 2rem;
     color: white;
 }
 h3 {
@@ -45,49 +41,56 @@ h4 {
 h5{
     font-size: 1.5rem;
     color: #363333;
-
 }
-h6 {
+h6{
     font-size: 1.5rem;
 }
-
-p {
+p{
     margin: 0 0 1.25rem;
     font-size: 1rem;
 }
-
-a {
+a{
     color: #E16428;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
-a:hover,
-a:focus {
-    text-decoration: none;
-    color: #E16428;
-}
-
-/* ==========================
-Logo
-============================= */
-
-body nav .brand-logo{
-    font-size: 1.5rem;
-    font-family: Prompt;
-    line-height: normal;
-    margin-top: 1rem;
-}
-
 /* ==========================
 Nav
 ============================= */
-
 .nav-wrapper{
     background-color: black;
 }
+.fa-bars{
+    margin-left: 2rem;
+    float: left;
+    padding-top: 15px;
+}
 
+nav ul{
+    display: none;
+}
+
+/**  hover burger **/
+nav:hover {
+  height: 280px;
+}
+nav:hover i{
+  transform: rotate(90deg);
+  color: #e65100;
+}
+nav:hover ul{
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
 
 /* ==========================
 Intro
@@ -99,14 +102,13 @@ body .intro{
     background-size: cover;
     padding-top: 32px;
     padding-bottom: 150px;
-    filter: opacity(1);
 }
 
 .intro .page-scroll, footer .page-scroll, .share{
     display: flex;
     justify-content: space-around;
 }
-.page-scroll .fa-angle-double-down, .page-scroll #totop  {
+.page-scroll .fa-angle-double-down, .page-scroll #totop {
     color: #e65100;
 }
 
@@ -116,24 +118,34 @@ Formation
 
 .formation h2{
     color: #e65100;
+    text-align: center;
 }
 .formation {
-    color: white;
-}
-
-#formation{
-    width: 50%;
-    height: 50%;
-    background-color: #363333;
-    -webkit-box-shadow: 0px 0px 38px 0px rgba(43,40,37,1);
-    -moz-box-shadow: 0px 0px 38px 0px rgba(43,40,37,1);
-    box-shadow: 0px 0px 38px 0px rgba(43,40,37,1);
-}
-
-.block-formation{
-    display: flex;
-    flex-wrap: wrap;
+    color: black;
     margin: 20px;
+}
+#formation{
+    width: 70%;
+    background-color: #6E828A;
+    margin-bottom: 20px;
+}
+#formation a{
+    color: black;
+}
+.block-formation{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#formation h4{
+    font-size: 1.3rem;
+    margin: 20px;
+    text-align: center;
+}
+#formation p{
+    color: white;
+    margin: 15px;
+    font-size: 1rem;
 }
 
 /* ==========================
@@ -142,42 +154,466 @@ experience
 
 .experience h2{
     color: #e65100;
+    text-align: center;
 }
-
 .collapsible-header{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
-
+.experience {
+    color: black;
+    margin: 20px;
+}
+.experience span{
+    font-size: 1rem
+}
+.experience .collapsible{
+    margin: 1.6rem;
+}
 /* ==========================
 compétences
 ============================= */
 .competence h2{
     color: #e65100;
+    text-align: center;
 }
-
+.competence{
+    color: black;
+    margin: 4rem;
+}
 .inner{
     margin-left: 2rem;
 }
-
 .competence h5{
+    text-align: center;
+}
+
+/*Bar de progression*/
+.competences .barres li {
+		position: relative;
+        margin: 1.2rem;
+        font-size: 1.4rem;
+	}
+.competences .barres li:after {
+		background: #e1e1e1;
+		bottom: -4px;
+		content: ' ';
+		display: block;
+		height: 7px;
+		position: absolute;
+		width:90%;
+	}
+.competences .barres li span {
+		background: #e65100;
+		bottom: -4px;
+		content: ' ';
+		display: block;
+		height: 7px;
+		left: 0;
+		position: absolute;
+		width: inherit;
+		z-index: 1;
+}
+.competences ul li a{
+    font-size: 1.2rem;
+
+}
+/* ==========================
+loisirs
+============================= */
+.loisirs h2{
+    color: #e65100;
+    text-align: center;
+}
+.detail-loisirs p{
+    margin: 2rem 2rem 1.875rem;
+}
+.loisirs {
+    color: black;
+    margin: 20px;
+}
+
+/* ==========================
+portfolio
+============================= */
+.portfolio h2{
+    color: #e65100;
+    text-align: center;
+}
+
+/* ==========================
+Contact
+============================= */
+.form-style-8{
+    font-family: 'Open Sans Condensed', arial, sans;
+    width: 500px;
+    padding: 30px;
+    background: #FFFFFF;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+.form-style-8 h2{
+    background: #4D4D4D;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #797979;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 20px;
+    margin: -30px -30px 30px -30px;
+}
+.form-style-8 input[type="text"],
+.form-style-8 input[type="email"],
+.form-style-8 textarea,
+
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 45px;
+}
+.form-style-8 textarea{
+    resize:none;
+    overflow: hidden;
+}
+.form-style-8 input[type="button"],
+.form-style-8 input[type="submit"]{
+    -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    background-color: #2CBBBB;
+    border: 1px solid #27A0A0;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14px;
+    padding: 8px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.form-style-8 input[type="button"]:hover,
+.form-style-8 input[type="submit"]:hover {
+    background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+    background-color:#34CACA;
+}
+
+
+/* ==========================
+Footer
+============================= */
+.page-footer{
+    background-color: black;
+}
+.container p, h5, .grey-text{
+    display: flex;
+    justify-content: space-around;
+}
+.grey-text{
+    margin-bottom: 15px;
+}
+.share{
+    font-size: 1.2rem;
+}
+.page-scroll #totop, .page-scroll .btn-circle  {
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* ==========================
+Tablette
+============================= */
+
+@media screen and (min-width:768px) {
+
+/* ==== titre ==== */
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 3rem 2rem 1.875rem;
+}
+h2  {
+    font-size: 4rem;
+    color: #E16428;
+    margin-top: 5rem;
+    text-align: center;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 1.7rem;
+}
+h5{
+    font-size: 2rem;
+}
+h6 {
+    font-size: 1.5rem;
+}
+p {
+    margin: 0.8rem 0.8rem 1.8rem;
+    font-size: 2rem;
+    padding: 150px;
+}
+a {
+    color: #E16428;
+    font-size: 2rem;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+/* ==========================
+Logo
+============================= */
+
+body nav .brand-logo{
+    font-size: 2rem;
+}
+
+/* ==========================
+Intro
+============================= */
+
+body .intro{
+    padding-top: 500px;
+}
+
+/* ==========================
+Formation
+============================= */
+#formation h4{
+    font-size: 3.8rem;
+}
+#formation p{
+    font-size: 1.7rem;
+}
+.block-formation{
     display: flex;
     justify-content: center;
 }
 
 /* ==========================
+experience
+============================= */
+.collapsible-header{
+    font-size: 1.9rem;
+    margin: 20px;
+}
+.experience {
+    color: black;
+    margin: 20px;
+}
+.experience span{
+    font-size: 1.7rem;
+}
+/* ==========================
+compétences
+============================= */
+.inner h5{
+    margin: 3rem;
+    color: ;
+    color: #AAAAAA;
+}
+.inner{
+    margin: 1rem 10rem 4rem;
+}
+/* ==========================
 loisirs
+============================= */
+.detail-loisirs p{
+    margin: 1rem 10rem 4rem;
+}
+.loisirs {
+    color: black;
+    margin: 5px;
+}
+.loisirs h5{
+    margin: 3rem;
+    color: ;
+    text-align: center;
+}
+/* ==========================
+portfolio
+============================= */
+
+/* ==========================
+Contact
+============================= */
+
+
+
+/* ==========================
+Footer
+============================= */
+.container p {
+    font-size: 1.5rem;
+}
+.share{
+    font-size: 1.2rem;
+}
+}
+
+/* ==========================
+Desktop
+============================= */
+
+@media screen and (min-width:940px) {
+
+body .intro{
+    background-image: url(../img/developpeur-catherine.jpg);
+    background-position: center;
+    padding-top: 500px;
+    padding-bottom: 100px;
+}
+.intro-bloc{
+    width: 50%;
+    background-color: black;
+}
+#formation{
+    padding-bottom: 2rem;
+}
+
+/* ==========================
+navbar Desktop
+============================= */
+.nav-wrapper ul a{
+    font-size: 1.2rem;
+}
+ nav ul{
+   margin-top: 3rem;
+}
+
+/* ==========================
+Formation Desktop
+============================= */
+.formation h2{
+    color: #e65100;
+    font-size: 3rem;
+}
+.formation {
+    color: black;
+    margin: 20px;
+}
+#formation{
+    width: 70%;
+    background-color: #6E828A;
+}
+#formation a{
+    color: black;
+}
+.block-formation{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#formation h4{
+    font-size: 1.3rem;
+    margin: 20px;
+    text-align: center;
+}
+#formation p{
+    color: white;
+    margin: 15px;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+/* ==========================
+experience Desktop
+============================= */
+.experience h2{
+    color: #e65100;
+}
+.collapsible-header{
+    font-size: 1.3rem;
+}
+.experience {
+    color: black;
+    margin: 150px;
+}
+.experience span{
+    font-size: 1rem
+}
+.experience .collapsible{
+    margin: 1.6rem;
+}
+/* ==========================
+compétences Desktop
+============================= */
+.competence h2{
+    color: #e65100;
+}
+.competence {
+    color: black;
+    margin: 3rem;
+}
+.inner{
+    margin-left: 2rem;
+}
+.competence h5{
+    display: flex;
+    justify-content: center;
+}
+
+/*Bar de progression*/
+
+.competences .barres li {
+		position: relative;
+        margin: 1.8rem;
+}
+.competences .barres li:after {
+	background: #e1e1e1;
+	bottom: -4px;
+	content: ' ';
+	display: block;
+	height: 7px;
+	position: absolute;
+	width:100%;
+}
+
+.competences .barres li span {
+	background: #e65100;
+	bottom: -4px;
+	content: ' ';
+	display: block;
+	height: 7px;
+	left: 0;
+	position: absolute;
+	width: inherit;
+	z-index: 1;
+}
+
+/* ==========================
+loisirs Desktop
 ============================= */
 
 .loisirs h2{
     color: #e65100;
 }
-
 .detail-loisirs p{
     margin: 2rem 2rem 1.875rem;
 }
-
+.loisirs {
+    color: black;
+    margin: 20px;
+}
 /* ==========================
-portfolio
+portfolio Desktop
 ============================= */
 
 .portfolio h2{
@@ -185,7 +621,7 @@ portfolio
 }
 
 /* ==========================
-Contact
+Contact Desktop
 ============================= */
 .formulaire{
     margin-top: 150px;
@@ -196,7 +632,7 @@ Contact
 }
 
 /* ==========================
-Footer
+Footer Desktop
 ============================= */
 .page-footer{
     background-color: black;
@@ -206,35 +642,15 @@ Footer
     display: flex;
     justify-content: space-around;
 }
-
 .grey-text{
     margin-bottom: 15px;
 }
 
-
 .share{
     font-size: 1.2rem;
 }
-
 .page-scroll #totop, .page-scroll .btn-circle  {
-    background-color: black;
+    background-color: white;
     border-radius: 5px;
 }
-
-/* ==========================
-Tablette
-============================= */
-
-@media screen and (min-width:768px) {
-  header{
-
-  }
-
-  /* ==========================
-  Desktop
-  ============================= */
-
-@media screen and (min-width:940px) {
-    header{
-
-    }
+}

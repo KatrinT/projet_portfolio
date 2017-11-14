@@ -28,13 +28,25 @@
 
   <!-- Nav -->
 
-  <nav>
+  <nav class="nav-wrapper">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+    <ul>
+        <li><a href="index.php#intro">Home</a></li>
+        <li><a href="index.php#Formations">Formation</a></li>
+        <li><a href="index.php#experience">Experience</a></li>
+        <li><a href="index.php#loisirs">Loisirs</a></li>
+        <li><a href="index.php#competence">Compétences techniques</a></li>
+        <li><a href="contact.php">Contact</a></li>
+    </ul>
+  </nav>
+
+ <!-- <nav>
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo">Catherine Tritz</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
           <li><a href="index.php#intro">Home</a></li>
-          <li><a href="index.php#formation">Formation</a></li>
+          <li><a href="index.php#Formations">Formation</a></li>
           <li><a href="index.php#experience">Experience</a></li>
           <li><a href="index.php#loisirs">Loisirs</a></li>
           <li><a href="index.php#competence">Compétences techniques</a></li>
@@ -42,12 +54,12 @@
       </ul>
       <ul class="side-nav" id="mobile-demo">
           <li><a href="index.php#intro">Home</a></li>
-          <li><a href="index.php#formation">Formation</a></li>
+          <li><a href="index.php#Formations">Formation</a></li>
           <li><a href="index.php#experience">Experience</a></li>
           <li><a href="index.php#loisirs">Loisirs</a></li>
           <li><a href="index.php#competence">Compétences techniques</a></li>
           <li><a href="contact.php">Contact</a></li>
       </ul>
     </div>
-  </nav>
+  </nav> -->
     <!-- FIN - .container -->
